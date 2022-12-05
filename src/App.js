@@ -1,12 +1,13 @@
-
 import './App.css';
+import Sidebar from './components/Sidebar';
+import Feed from './components/Feed'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Twitter Clone</h1>
-      {/* Sidebar */}
+    <div className="app">
+      <Sidebar />
       {/* Feed */}
+      <Feed />
       {/* Widget */}
     </div>
   );
