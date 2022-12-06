@@ -1,8 +1,25 @@
 .widgets {
     flex:0.3;
+    overflow-y: scroll;
+}
+
+
+.widgets::-webkit-scrollbar {
+    display: none;
+    /*Chrome,safari,opera*/
+}
+
+.widgets {
+    -ms-overflow-style: none;
+    /*Edge*/
+    scrollbar-width: none;
+    /*Firefox*/
 }
 
 .widgets_input {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     background-color: var(--twitter-background);
@@ -28,25 +45,45 @@
     margin-right: 10px;
 }
 
+
+
 .widget_container, .follow_container {
     background-color: #f5f8fa;
     margin-left: 20px;
     margin-top: 20px;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border-radius: 20px;
 }
 
 .widget_container > h2 {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
 }
 
 
 .follow_container>h2 {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
 }
 
+.follow_container {
+    margin-bottom: 30px;
+}
 
+.widget_container > p {
+    padding: 20px;
+    color: var(--twitter-color);
+    font-size: 15px;
+}
 
+.follow_container>p {
+    padding: 20px;
+    color: var(--twitter-color);
+    font-size: 15px;
+}
 
+.embed {
+    padding: 0px 20px;
+}

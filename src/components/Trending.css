@@ -1,7 +1,13 @@
 .trending {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+
+.trending:hover{
+    background-color: var(--twitter-background);
+    
 }
 
 .trendingL > p {

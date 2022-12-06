@@ -1,0 +1,49 @@
+.follow_widget{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.follow_widget:hover {
+    background-color: var(--twitter-background);
+}
+
+.followBody {
+    display: flex;
+    align-items: center;
+}
+
+.followL > h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.followL > h3 {
+    display: flex;
+    align-items: center;
+}
+
+.icon > .MuiSvgIcon-root {
+    font-size: 18px;
+    color: var(--twitter-color);
+}
+
+
+.followL > p {
+    color: gray;
+    font-size: 14px;
+}
+
+.follow_btn {
+    background-color: black !important;
+    color: white !important;
+    text-transform: inherit !important;
+    border-radius: 20px !important;
+    padding: 5px 20px !important;
+
+}

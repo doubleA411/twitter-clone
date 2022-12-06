@@ -6,6 +6,7 @@ import GifBoxOutlinedIcon from '@mui/icons-material/GifBoxOutlined';
 import SentimentSatisfiedOutlinedIcon from '@mui/icons-material/SentimentSatisfiedOutlined';
 import CalendarTodayOutlinedIcon from '@mui/icons-material/CalendarTodayOutlined';
 import { db } from '../firebase';
+import firebase from 'firebase/compat/app';
 function TweetBox() {
     const [tweetText, setTweetText] = useState("");
     const sendTweet = e => {
@@ -18,6 +19,7 @@ function TweetBox() {
             avatar: "https://pbs.twimg.com/profile_images/1489633281368674307/ea30DSAr_400x400.jpg",
             text: tweetText,
             image: "",
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
         })
 
         setTweetText("");
