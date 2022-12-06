@@ -1,0 +1,15 @@
+.trending {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.trendingL > p {
+    color: grey;
+    font-size: 13px;
+}
+
+.trendingL > h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
