@@ -18,6 +18,10 @@
     font-size: 14px;
 }
 
+.widgets_input > input:focus {
+    outline-width: 0;
+}
+
 .widgets_input > .MuiSvgIcon-root {
     font-size: 20px;
     color: grey;
@@ -25,7 +29,7 @@
 }
 
 .widget_container, .follow_container {
-    background-color: var(--twitter-background);
+    background-color: #f5f8fa;
     margin-left: 20px;
     margin-top: 20px;
     padding: 10px 20px;

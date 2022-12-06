@@ -25,6 +25,8 @@
     color: gray;
 }
 
+
+
 .badge {
     color: var(--twitter-color);
     font-size: 18px !important;
@@ -39,6 +41,7 @@
 .post_description {
     margin-bottom: 5px;
     font-size: 15px;
+    max-width: 500px;
 }
 .post_avatar {
     padding: 10px;

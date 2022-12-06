@@ -19,20 +19,20 @@ function Post({
     return (
         <div className='post'>
             <div className='post_avatar'>
-                <Avatar />
+                <Avatar src={avatar} />
             </div>
             <div className="post_body">
                 <div className="post_header">
                     <div className="post_headerText">
                         <h3>
-                            Aakash <span className='post_headerTag'><VerifiedIcon className='badge'/>@doublea.in</span>
+                            {displayName}<span className='post_headerTag'> {verified && <VerifiedIcon className='badge'/>}   @{username}</span>
                         </h3>
                     </div>
                     <div className="post_description">
-                        <p>Twitter Clone is coming soon!!!!</p>
+                        <p>{text}</p>
                     </div>
                 </div>
-                <img src="https://pbs.twimg.com/media/FjNMNvnaEAAjNgx?format=jpg&name=small" alt="" />
+                {image.length > 0 && <img src={image} alt="" />}
                 <div className="post_footer">
                     <ChatBubbleOutlineIcon fontSize='small'/>
                     <RepeatIcon fontSize='small'/>
