@@ -3,14 +3,18 @@ import { Avatar, Button } from '@mui/material'
 import React from 'react'
 import './Follow.css'
 
-function Follow() {
+function Follow({
+    displayName,
+    username,
+    avatar
+}) {
     return (
         <div className='follow_widget'>
             <div className="followBody">
-                <Avatar className='avatar'/>
+                <Avatar className='avatar' src={avatar}/>
                 <div className="followL">
-                    <h3>AWS Nonprofits<span className='icon'> <VerifiedIcon/></span></h3>
-                    <p>@AWS_Nonprofit</p>
+                    <h3>{displayName}<span className='icon'> <VerifiedIcon/></span></h3>
+                    <p>@{username}</p>
                 </div>
             </div>
             <div className="followR">
